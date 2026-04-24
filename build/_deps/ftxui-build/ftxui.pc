@@ -1,9 +1,0 @@
-prefix="C:/Program Files/TerminalGame"
-libdir="C:/Program Files/TerminalGame/lib"
-includedir="C:/Program Files/TerminalGame/include"
-
-Name: ftxui
-Description: 
-Version: 5.0.0
-Cflags: -I${includedir}
-Libs: -L${libdir} -lftxui-component -lftxui-dom -lftxui-screen

@@ -1,3 +1,0 @@
-C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir
-C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/ZERO_CHECK.dir
