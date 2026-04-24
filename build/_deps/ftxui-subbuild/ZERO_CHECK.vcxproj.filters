@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-subbuild\CMakeFiles\1a0dab363597c8e4a3a994af46b37f93\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2F15A3FD-EB0C-3F6A-ABA0-EDACB1354875}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

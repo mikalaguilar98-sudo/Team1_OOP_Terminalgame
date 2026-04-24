@@ -1,0 +1,49 @@
+\doxysection{Game\+World.\+h}
+\hypertarget{_game_world_8h_source}{}\label{_game_world_8h_source}\doxymbox{\hyperlink{_game_world_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEWORLD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEWORLD\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_enemies_8h}{Enemies.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_game}{Game}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_world}{World}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_game_a4e9cc7d2d517cafdb36395c465cbabe7}{Game}}\{\textcolor{comment}{//main\ game\ class\ to\ manage\ the\ world\ and\ game\ loop\ with\ threads,\ clock\ and\ the\ world\ class}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_world}{World}}\&\ world;\ \textcolor{comment}{//game\ world,\ has\ players,\ enemies\ and\ their\ interactions}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_game_a4e9cc7d2d517cafdb36395c465cbabe7}{Game}}(\doxymbox{\hyperlink{class_world}{World}}\&\ w);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_game_ae8638ccdb0ef3bf39a6affa30aa1258f}{startGame}}();}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_world_a871b25c543df03c50eb23462fad01761}{World}}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_player}{Player}}\ player;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::vector<Enemy>\ enemies;\ \textcolor{comment}{//store\ multiple\ enemies}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ worldSizeX,\ worldSizeY;\ \textcolor{comment}{//size\ of\ the\ world,\ can\ be\ used\ to\ limit\ player\ and\ enemy\ movement}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::vector<std::vector<int>>\ grid;\ \textcolor{comment}{//2D\ grid\ to\ represent\ the\ world}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::mutex\ worldMutex;\ \textcolor{comment}{//protects\ enemies\ vector}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::chrono::steady\_clock::time\_point\ lastTick;\ \textcolor{comment}{//track\ the\ last\ game\ tick}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::chrono::milliseconds\ tickDuration\{100\};\ \textcolor{comment}{//duration\ of\ each\ game\ tick\ (100ms)}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_world_a871b25c543df03c50eb23462fad01761}{World}}(\textcolor{keywordtype}{int}\ sizeX,\ \textcolor{keywordtype}{int}\ sizeY,\ \doxymbox{\hyperlink{class_player}{Player}}\ p);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_world_ad469b8d0691ec06f094fff0bec71c7c9}{addenemy}}(\doxymbox{\hyperlink{class_enemy}{Enemy}}\ e);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_world_a1daaaadcd0afa4da853da23bb970d10c}{movePlayer}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_world_aa27e80a41c7e0dbd24af1e1cbf3898ee}{moveEnemies}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//game\ loop,\ can\ be\ called\ in\ main\ to\ start\ the\ game\ for\ thread\ safety\ and\ tick\ management}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_world_af2b4ba4ce188c2770f13108e4277414f}{gameLoop}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//getters}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_player}{Player}}\&\ \doxymbox{\hyperlink{class_world_ad992171c7b88c0f34449033a9fe22481}{getPlayer}}()\ \{\textcolor{keywordflow}{return}\ player;\}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Enemy>\&\ \doxymbox{\hyperlink{class_world_a85f9a8f84cf1b8488c19d3e984e33a8e}{getEnemies}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ enemies;\}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::mutex\&\ \doxymbox{\hyperlink{class_world_a7429d5877b0c79326da6a88758272699}{getMutex}}()\{\textcolor{keywordflow}{return}\ worldMutex;\}\ \textcolor{comment}{//getter\ for\ render\ thread}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//GAMEWORLD\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,28 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CPack.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CPackComponent.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindThreads.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Templates/CPackConfig.cmake.in
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/CMakeLists.txt
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui-config.cmake.in
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_benchmark.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_coverage.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_export.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_fuzzer.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_install.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_message.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_package.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_set_options.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/ftxui_test.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/cmake/iwyu.cmake
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-src/ftxui.pc.in

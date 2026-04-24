@@ -1,0 +1,24 @@
+\doxysection{Enemies.\+h}
+\hypertarget{_enemies_8h_source}{}\label{_enemies_8h_source}\doxymbox{\hyperlink{_enemies_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ENEMIES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENEMIES\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}\ \textcolor{comment}{//store\ enemies\ in\ a\ vector\ for\ easy\ management}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_player}{Player}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_enemy_ab18d7b3bedf9b42ede131aa1e7babf31}{Enemy}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_entity_a9f6d965fe34c1975599d431783b6f2c6}{Entity}}\{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ damage;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_enemy_ab18d7b3bedf9b42ede131aa1e7babf31}{Enemy}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ obj,\ \textcolor{keywordtype}{int}\ hp,\ \textcolor{keywordtype}{int}\ dmg);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_enemy_abb68708af5f493bee8516d1dce35797e}{getDamage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_enemy_a9cf25c0b933fe9840a7edd68fb8b4b1d}{moveToPlayer}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_player}{Player}}\&\ player);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_enemy_a59a63b43b67c690d2504617c01683622}{attackPlayer}}(\doxymbox{\hyperlink{class_player}{Player}}\&\ player);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_enemy_ade007046ec33a6c23bd9a27b2d7cfbe2}{playerAttackEnemy}}(\doxymbox{\hyperlink{class_player}{Player}}\&\ player);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_enemy_ab863850be6941380f3ae569129e2214a}{getHealthPoints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ENEMIES\_H}}
+
+\end{DoxyCode}

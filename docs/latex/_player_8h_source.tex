@@ -1,0 +1,29 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\doxymbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_enemy}{Enemy}};}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_player_a1114770ebd2eae368e6c8810755a010c}{Player}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_entity_a9f6d965fe34c1975599d431783b6f2c6}{Entity}}\{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{private}:\ \textcolor{comment}{//what\ else\ can\ we\ add\ to\ the\ player?}}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ score;}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ damage;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ weaponX,\ weaponY;\ \textcolor{comment}{//position\ of\ weapon,\ can\ be\ used\ to\ determine\ if\ player\ can\ attack\ enemy}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_player_a1114770ebd2eae368e6c8810755a010c}{Player}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ obj,\ \textcolor{keywordtype}{int}\ hp,\ \textcolor{keywordtype}{int}\ s,\ \textcolor{keywordtype}{int}\ d,\ \textcolor{keywordtype}{int}\ wX,\ \textcolor{keywordtype}{int}\ wY);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_player_a1dfe0ea1f7cd05f54087d19e24da72f2}{Score}}(\textcolor{keywordtype}{int}\ points);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_player_acbdb2bae8d732157af0ca5f5438a2b63}{getScore}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_player_a3c0242a0a486e9548ebae8dad82593d7}{getDamage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_player_a3bae46eff7f6f1e2c37476523c832384}{setDamage}}(\textcolor{keywordtype}{int}\ dmg);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_player_a5490821d6ff31034029177ba9c075aaa}{attackEnemy}}(\doxymbox{\hyperlink{class_enemy}{Enemy}}\&\ enemy);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_player_a37e3ef0926b9e7c28d0dcab86b72365e}{getWeaponX}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_player_ad53eef3d9f43c04036ff43bdcddbd2af}{getWeaponY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_player_aebb43c51a7da9e652f5574e8ded62f87}{move}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);\ \textcolor{comment}{//move\ weapon}}
+\DoxyCodeLine{00022\ \};\ \ \ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLAYER\_H}}
+
+\end{DoxyCode}

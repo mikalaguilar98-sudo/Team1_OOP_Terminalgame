@@ -1,0 +1,108 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{class_enemy}{}\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \+\#include $<$Enemies.\+h$>$}
+
+
+
+Inheritance diagram for Enemy:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{class_enemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{class_enemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_enemy_ab18d7b3bedf9b42ede131aa1e7babf31}{Enemy}} (int x, int y, char obj, int hp, int dmg)
+\item 
+int \doxymbox{\hyperlink{class_enemy_abb68708af5f493bee8516d1dce35797e}{get\+Damage}} () const
+\item 
+void \doxymbox{\hyperlink{class_enemy_a9cf25c0b933fe9840a7edd68fb8b4b1d}{move\+To\+Player}} (const \doxymbox{\hyperlink{class_player}{Player}} \&player)
+\item 
+void \doxymbox{\hyperlink{class_enemy_a59a63b43b67c690d2504617c01683622}{attack\+Player}} (\doxymbox{\hyperlink{class_player}{Player}} \&player)
+\item 
+void \doxymbox{\hyperlink{class_enemy_ade007046ec33a6c23bd9a27b2d7cfbe2}{player\+Attack\+Enemy}} (\doxymbox{\hyperlink{class_player}{Player}} \&player)
+\item 
+int \doxymbox{\hyperlink{class_enemy_ab863850be6941380f3ae569129e2214a}{get\+Health\+Points}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_entity_a9f6d965fe34c1975599d431783b6f2c6}{Entity}} (int x, int y, char obj, int hp)
+\item 
+void \doxymbox{\hyperlink{class_entity_abd3c1da61bfefb942f609e5f8606f1cc}{move}} (int x, int y)
+\item 
+int \doxymbox{\hyperlink{class_entity_a5a851d21579432e736fb7c479e86fb6b}{getX}} () const
+\item 
+int \doxymbox{\hyperlink{class_entity_ae48a05fef6420bb320d17aed7ea98cb3}{getY}} () const
+\item 
+void \doxymbox{\hyperlink{class_entity_a9534c576045aabcf406d1f891d5b3b60}{take\+Damage}} (int damage)
+\item 
+int \doxymbox{\hyperlink{class_entity_a869c6d29311a34dfa0218ecbd2d34fda}{get\+Health\+Points}} () const
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_enemy_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_enemy_ab18d7b3bedf9b42ede131aa1e7babf31}\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily \label{class_enemy_ab18d7b3bedf9b42ede131aa1e7babf31} 
+Enemy::\+\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{char}]{obj}{, }\item[{int}]{hp}{, }\item[{int}]{dmg}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_enemy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_a59a63b43b67c690d2504617c01683622}\index{Enemy@{Enemy}!attackPlayer@{attackPlayer}}
+\index{attackPlayer@{attackPlayer}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{attackPlayer()}{attackPlayer()}}
+{\footnotesize\ttfamily \label{class_enemy_a59a63b43b67c690d2504617c01683622} 
+void Enemy::\+attack\+Player (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_player}{Player}} \&}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_enemy_abb68708af5f493bee8516d1dce35797e}\index{Enemy@{Enemy}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily \label{class_enemy_abb68708af5f493bee8516d1dce35797e} 
+int Enemy::\+get\+Damage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_enemy_ab863850be6941380f3ae569129e2214a}\index{Enemy@{Enemy}!getHealthPoints@{getHealthPoints}}
+\index{getHealthPoints@{getHealthPoints}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getHealthPoints()}{getHealthPoints()}}
+{\footnotesize\ttfamily \label{class_enemy_ab863850be6941380f3ae569129e2214a} 
+int Enemy::\+get\+Health\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_enemy_a9cf25c0b933fe9840a7edd68fb8b4b1d}\index{Enemy@{Enemy}!moveToPlayer@{moveToPlayer}}
+\index{moveToPlayer@{moveToPlayer}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{moveToPlayer()}{moveToPlayer()}}
+{\footnotesize\ttfamily \label{class_enemy_a9cf25c0b933fe9840a7edd68fb8b4b1d} 
+void Enemy::\+move\+To\+Player (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_player}{Player}} \&}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_enemy_ade007046ec33a6c23bd9a27b2d7cfbe2}\index{Enemy@{Enemy}!playerAttackEnemy@{playerAttackEnemy}}
+\index{playerAttackEnemy@{playerAttackEnemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{playerAttackEnemy()}{playerAttackEnemy()}}
+{\footnotesize\ttfamily \label{class_enemy_ade007046ec33a6c23bd9a27b2d7cfbe2} 
+void Enemy::\+player\+Attack\+Enemy (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_player}{Player}} \&}]{player}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_enemies_8h}{Enemies.\+h}}\item 
+\doxymbox{\hyperlink{_enemies_8cpp}{Enemies.\+cpp}}\end{DoxyCompactItemize}

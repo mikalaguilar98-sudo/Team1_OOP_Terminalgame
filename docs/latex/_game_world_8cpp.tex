@@ -1,0 +1,43 @@
+\doxysection{Game\+World.\+cpp File Reference}
+\hypertarget{_game_world_8cpp}{}\label{_game_world_8cpp}\index{GameWorld.cpp@{GameWorld.cpp}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$mutex$>$}\newline
+{\ttfamily \+\#include $<$chrono$>$}\newline
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include "{}Entity.\+h"{}}\newline
+{\ttfamily \+\#include "{}Player.\+h"{}}\newline
+{\ttfamily \+\#include "{}Enemies.\+h"{}}\newline
+{\ttfamily \+\#include "{}Game\+World.\+h"{}}\newline
+Include dependency graph for Game\+World.\+cpp:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_world_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::\+mutex \& \doxymbox{\hyperlink{_game_world_8cpp_a525df0ade172fd93fd0cc96a1ada0e80}{get\+Mutex}} ()
+\item 
+const std::\+vector$<$ \doxymbox{\hyperlink{class_enemy}{Enemy}} $>$ \& \doxymbox{\hyperlink{_game_world_8cpp_a98faa99968ccd6e19f55192921efd545}{get\+Enemies}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_game_world_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_game_world_8cpp_a98faa99968ccd6e19f55192921efd545}\index{GameWorld.cpp@{GameWorld.cpp}!getEnemies@{getEnemies}}
+\index{getEnemies@{getEnemies}!GameWorld.cpp@{GameWorld.cpp}}
+\doxysubsubsection{\texorpdfstring{getEnemies()}{getEnemies()}}
+{\footnotesize\ttfamily \label{_game_world_8cpp_a98faa99968ccd6e19f55192921efd545} 
+const std::\+vector$<$ \doxymbox{\hyperlink{class_enemy}{Enemy}} $>$ \& get\+Enemies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_game_world_8cpp_a525df0ade172fd93fd0cc96a1ada0e80}\index{GameWorld.cpp@{GameWorld.cpp}!getMutex@{getMutex}}
+\index{getMutex@{getMutex}!GameWorld.cpp@{GameWorld.cpp}}
+\doxysubsubsection{\texorpdfstring{getMutex()}{getMutex()}}
+{\footnotesize\ttfamily \label{_game_world_8cpp_a525df0ade172fd93fd0cc96a1ada0e80} 
+std::\+mutex \& get\+Mutex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

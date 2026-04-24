@@ -1,0 +1,89 @@
+\doxysection{World Class Reference}
+\hypertarget{class_world}{}\label{class_world}\index{World@{World}}
+
+
+{\ttfamily \+\#include $<$Game\+World.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_world_a871b25c543df03c50eb23462fad01761}{World}} (int sizeX, int sizeY, \doxymbox{\hyperlink{class_player}{Player}} p)
+\item 
+void \doxymbox{\hyperlink{class_world_ad469b8d0691ec06f094fff0bec71c7c9}{addenemy}} (\doxymbox{\hyperlink{class_enemy}{Enemy}} e)
+\item 
+void \doxymbox{\hyperlink{class_world_a1daaaadcd0afa4da853da23bb970d10c}{move\+Player}} (int x, int y)
+\item 
+void \doxymbox{\hyperlink{class_world_aa27e80a41c7e0dbd24af1e1cbf3898ee}{move\+Enemies}} ()
+\item 
+void \doxymbox{\hyperlink{class_world_af2b4ba4ce188c2770f13108e4277414f}{game\+Loop}} ()
+\item 
+\doxymbox{\hyperlink{class_player}{Player}} \& \doxymbox{\hyperlink{class_world_ad992171c7b88c0f34449033a9fe22481}{get\+Player}} ()
+\item 
+const std::\+vector$<$ \doxymbox{\hyperlink{class_enemy}{Enemy}} $>$ \& \doxymbox{\hyperlink{class_world_a85f9a8f84cf1b8488c19d3e984e33a8e}{get\+Enemies}} () const
+\item 
+std::\+mutex \& \doxymbox{\hyperlink{class_world_a7429d5877b0c79326da6a88758272699}{get\+Mutex}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_world_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_world_a871b25c543df03c50eb23462fad01761}\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily \label{class_world_a871b25c543df03c50eb23462fad01761} 
+World::\+\+World (\begin{DoxyParamCaption}\item[{int}]{sizeX}{, }\item[{int}]{sizeY}{, }\item[{\doxymbox{\hyperlink{class_player}{Player}}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_world_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_world_ad469b8d0691ec06f094fff0bec71c7c9}\index{World@{World}!addenemy@{addenemy}}
+\index{addenemy@{addenemy}!World@{World}}
+\doxysubsubsection{\texorpdfstring{addenemy()}{addenemy()}}
+{\footnotesize\ttfamily \label{class_world_ad469b8d0691ec06f094fff0bec71c7c9} 
+void World::\+addenemy (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_enemy}{Enemy}}}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_world_af2b4ba4ce188c2770f13108e4277414f}\index{World@{World}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!World@{World}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily \label{class_world_af2b4ba4ce188c2770f13108e4277414f} 
+void World::\+game\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_world_a85f9a8f84cf1b8488c19d3e984e33a8e}\index{World@{World}!getEnemies@{getEnemies}}
+\index{getEnemies@{getEnemies}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getEnemies()}{getEnemies()}}
+{\footnotesize\ttfamily \label{class_world_a85f9a8f84cf1b8488c19d3e984e33a8e} 
+const std::\+vector$<$ \doxymbox{\hyperlink{class_enemy}{Enemy}} $>$ \& World::\+get\+Enemies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_world_a7429d5877b0c79326da6a88758272699}\index{World@{World}!getMutex@{getMutex}}
+\index{getMutex@{getMutex}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getMutex()}{getMutex()}}
+{\footnotesize\ttfamily \label{class_world_a7429d5877b0c79326da6a88758272699} 
+std::\+mutex \& World::\+get\+Mutex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_world_ad992171c7b88c0f34449033a9fe22481}\index{World@{World}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \label{class_world_ad992171c7b88c0f34449033a9fe22481} 
+\doxymbox{\hyperlink{class_player}{Player}} \& World::\+get\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_world_aa27e80a41c7e0dbd24af1e1cbf3898ee}\index{World@{World}!moveEnemies@{moveEnemies}}
+\index{moveEnemies@{moveEnemies}!World@{World}}
+\doxysubsubsection{\texorpdfstring{moveEnemies()}{moveEnemies()}}
+{\footnotesize\ttfamily \label{class_world_aa27e80a41c7e0dbd24af1e1cbf3898ee} 
+void World::\+move\+Enemies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_world_a1daaaadcd0afa4da853da23bb970d10c}\index{World@{World}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!World@{World}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily \label{class_world_a1daaaadcd0afa4da853da23bb970d10c} 
+void World::\+move\+Player (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_game_world_8h}{Game\+World.\+h}}\item 
+\doxymbox{\hyperlink{_game_world_8cpp}{Game\+World.\+cpp}}\end{DoxyCompactItemize}

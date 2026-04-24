@@ -1,0 +1,150 @@
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/tmp/ftxui-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/tmp/ftxui-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-UPDATE.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-src"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/tmp/ftxui-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\5DAC9FAC200AD73F29ED5BA5068FF386\FTXUI-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\19155\Documents\SWD2 proj\build\_deps\ftxui-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\4807DAE7703017A1171CB1CDA9AE61DD\FTXUI-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/Debug/ftxui-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/Debug/ftxui-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKEFILES\1A0DAB363597C8E4A3A994AF46B37F93\FTXUI-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\19155\DOCUMENTS\SWD2 PROJ\BUILD\_DEPS\FTXUI-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild" "-BC:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild" --check-stamp-file "C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

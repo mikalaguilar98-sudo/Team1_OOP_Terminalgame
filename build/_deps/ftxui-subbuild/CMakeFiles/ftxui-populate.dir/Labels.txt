@@ -1,0 +1,14 @@
+# Target labels
+ ftxui-populate
+# Source files and their labels
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/1a0dab363597c8e4a3a994af46b37f93/ftxui-populate.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/4807dae7703017a1171cb1cda9ae61dd/ftxui-populate-complete.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-build.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-configure.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-download.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-install.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-mkdir.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-patch.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-test.rule
+C:/Users/19155/Documents/SWD2 proj/build/_deps/ftxui-subbuild/CMakeFiles/5dac9fac200ad73f29ed5ba5068ff386/ftxui-populate-update.rule
